@@ -9,7 +9,7 @@ void main() {
       odd.add(Number[i]);
     }
   }
-  print("Hello World");
+
   print("$even");
   print(odd);
 }
