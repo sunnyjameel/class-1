@@ -1,5 +1,5 @@
 void main() {
-  // Create a list of names
+  // Create a list of names Question No1
   List<String> names = ['Ali', 'Bilal', 'ahmed', 'Daniyal'];
 
   // Print all names using a loop
@@ -7,7 +7,7 @@ void main() {
     print(name);
   }
 
-  // Create a list of numbers
+  // Create a list of numbers Question No4
   List<int> numbers = [15, 3, 7, 21, 9, 12, 5];
 
   // Find the smallest and greatest numbers
