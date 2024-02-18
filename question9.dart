@@ -23,4 +23,45 @@ void main() {
   } catch (e) {
     print("Error: $e");
   }
+
+  // QuetionNo12
+
+  List<String> reverseList(List<String> originalList) {
+    List<String> reversedList = List.from(originalList.reversed);
+    return reversedList;
+  }
+
+  {
+    List<String> originalStrings = ["apple", "banana", "orange", "grape"];
+
+    List<String> reversedStrings = reverseList(originalStrings);
+
+    print("Original List: $originalStrings");
+    print("Reversed List: $reversedStrings");
+  }
+
+  // Question No11
+
+  List<T> takeFirstN<T>(List<T> originalList, int n) {
+    if (n < 0 || n > originalList.length) {
+      throw Exception("Invalid value of n");
+    }
+
+    List<T> newList = originalList.sublist(0, n);
+    return newList;
+  }
+
+  {
+    List<int> originalList = [1, 2, 3, 4, 5, 6, 7];
+    int n = 3;
+
+    try {
+      List<int> firstNElements = takeFirstN(originalList, n);
+
+      print("Original List: $originalList");
+      print("First $n Elements: $firstNElements");
+    } catch (e) {
+      print("Error: $e");
+    }
+  }
 }
