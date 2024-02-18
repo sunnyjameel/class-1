@@ -64,4 +64,27 @@ void main() {
       print("Error: $e");
     }
   }
+
+  // Questiom No13
+
+  List<int> getUniqueElements(List<int> originalList) {
+    List<int> uniqueList = [];
+
+    for (int number in originalList) {
+      if (!uniqueList.contains(number)) {
+        uniqueList.add(number);
+      }
+    }
+
+    return uniqueList;
+  }
+
+  {
+    List<int> originalList = [1, 2, 3, 2, 4, 5, 1, 6, 7, 8, 6];
+
+    List<int> uniqueElements = getUniqueElements(originalList);
+
+    print("Original List: $originalList");
+    print("Unique Elements: $uniqueElements");
+  }
 }
