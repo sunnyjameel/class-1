@@ -128,6 +128,7 @@ void main() {
   print("A. 1974");
   print("B. 1988");
   print("C. 1998");
+
   String answer10 = getUserAnswer();
   if (answer10.toUpperCase() == "C") {
     print("Correct!");
